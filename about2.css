@@ -1,0 +1,8 @@
+.menubar > div {
+  font-size: 24px;
+
+}
+
+.linkbar > div {
+  border: 1px solid black;
+}
