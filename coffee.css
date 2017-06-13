@@ -1,9 +1,19 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
 body {
   margin: 0 auto;
+  height: 100%;
   font-family: 'Amatic SC', cursive;
-  background-color: lightblue;
-}
+  background-color: lightblue!important;
+  overflow: hidden;
 
+}
+/*
+div {
+  display: inline-block;
+}*/
 .container {
   padding-left: 0px!important;
   padding-right: 0px!important;
@@ -97,8 +107,12 @@ video::-webkit-media-controls {
 .footer {
 
 }
-
+.bottomRow {
+  background-color: lightblue;
+  height: 100%;
+}
 .bottomContainer {
+
   margin: 0 auto;
 }
 
@@ -116,6 +130,9 @@ video::-webkit-media-controls {
   font-size: 190%;
   font-weight: 500;
 }
+#proud {
+  display: block;
+}
 .easyTiger {
   width: 70%;
   border-radius: 60%;
@@ -130,14 +147,89 @@ video::-webkit-media-controls {
 }
 /**** MOBILE EDITING ***/
 
+.mobileView {
+  display: none;
+  margin-top: 50px;
+  height: 45%;
+}
+
+#mobilesocial {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  flex: 0 0 100%; /* Let it fill the entire space horizontally */
+}
+#mobiletwitter, #mobilefacebook, #mobileinstagram, #mobiletripadvisor {
+  width: 70px;
+  margin-top: 25px;
+  flex: 0 0 50%;
+
+}
+#mobileaddress {
+  flex: 0 0 100%;
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  padding: 5px;
+}
+
+
 @media screen and (max-height: 767px) {
+  .mobileButton {
+    display: inline-block;
+    background-color: transparent;
+  }
+    .nonMobile {
+      display: none;
+    }
+    .mobileView {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
     .thevideo {
         visibility: hidden!important;
     }
     .video_wrapper {
       margin-top: 50px;
     }
+    .bottomRow {
+      background-image: url("http://images.all-free-download.com/images/graphiclarge/wood_grain_03_hd_pictures_168527.jpg");
+    }
 
+}
+@media screen and (max-width: 768px) {
+  .mobileButton {
+    display: inline-block;
+    background-color: transparent;
+  }
+    .nonMobile {
+      display: none;
+    }
+    .mobileView {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .thevideo {
+        visibility: hidden!important;
+    }
+    .video_wrapper {
+      margin-top: 50px;
+    }
+    .bottomRow {
+      background-image: url("http://images.all-free-download.com/images/graphiclarge/wood_grain_03_hd_pictures_168527.jpg");
     }
 
 }
