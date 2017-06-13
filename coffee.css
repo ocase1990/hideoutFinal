@@ -20,7 +20,7 @@ li {
   border: none;
   cursor: pointer;
   font-weight: 800;
-  font-size: 6vh;
+  font-size: 3em;
   padding-top: 4%;
   padding-bottom: 2%;
 
@@ -33,24 +33,24 @@ li {
 /* leftmenu and rightmenu refer to each side of the top bar menu */
 .leftmenu {
   float: left!important;
-  padding-left: 8%!important;
 }
 .rightmenu {
-  padding-right: 8%;
+
 }
 
+
 .logo {
+  visibility: hidden;
+  width: 12%;
   position: absolute;
   border: none;
   cursor: pointer;
   z-index: 2000;
 }
-
-.logobox {
- margin: 0 auto;
- height: 22vh;
- width: 22vh;
- z-index: 1;
+@media screen and (min-width: 1250px) {
+    .logo {
+        visibility: visible!important;
+    }
 }
 
 
@@ -64,29 +64,27 @@ li {
 }
 
 .row {
-  margin-right: 0px!important;
+  margin: 0!important;
+  padding: 0!important;
 
 }
-#videosList {
-
-  height: 87vh;
-  width: 100%;
-  overflow: hidden;
-  z-index: -100;
-  background-image: url("https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/17203122_10155211369218013_4579764558525881262_n.jpg?oh=7df8f3c10809a42e16fd2b1222708a5b&oe=59B434C2");
-  background-size: cover;
+.video_wrapper {
+  background-image: url("https://static1.squarespace.com/static/542aae07e4b06868dcab2966/t/546eb682e4b0f8f6a10aadef/1416541826584/the+Hideout+Coffee+house?format=1000w");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000000;
 }
-/*
+
 .thevideo {
-  visibility: hidden;
-}
-*/
+  object-fit: contain;
+  display: block;
 
-@media screen and (max-width: 767px) {
-    .thevideo {
-        visibility: hidden!important;
-    }
+
+  width: 100%;
 }
+
+
 .defaultpic {
   margin-top: 7%;
   width: 100%;
@@ -97,10 +95,11 @@ video::-webkit-media-controls {
 }
 
 .footer {
-  padding: 0px!important;
+
 }
 
 .bottomContainer {
+  margin: 0 auto;
 }
 
 .mediaButton {
@@ -128,4 +127,17 @@ video::-webkit-media-controls {
 .katz {
   width: 83%;
   border-radius: 60%
+}
+/**** MOBILE EDITING ***/
+
+@media screen and (max-height: 767px) {
+    .thevideo {
+        visibility: hidden!important;
+    }
+    .video_wrapper {
+      margin-top: 50px;
+    }
+    
+    }
+
 }

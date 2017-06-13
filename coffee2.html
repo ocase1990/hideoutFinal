@@ -13,11 +13,12 @@
   <title>Hideout Coffee (home)</title>
 </head>
 <body>
+
   <div class="container" style="width:100%;">
     <div class="row menuBar">
 
       <div class="col logo">
-        <img src="https://c1.staticflickr.com/5/4167/33929754570_ec831d27c4_m.jpg" style="height:165px;">
+        <img src="https://c1.staticflickr.com/5/4167/33929754570_ec831d27c4_m.jpg" style="height:100%;">
       </div>
 
      <div class="navbar navbar-inverse navbar-fixed-top">
@@ -46,30 +47,27 @@
 
     </div>
 
-    <div class="row video">
-      <div class="col-md-12" id="videosList">
-        <!-- video playing at full resolution -->
+    <div class="video_wrapper">
           <video class="thevideo" loop autoplay="true">
             <source src="Hideout_Intro.mp4" type="video/mp4">
           </video>
           <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
           <script src="index.js"></script>
-        </div>
     </div>
 
-    <div class="footer" style="background-color:lightblue; padding-right:0;">
+    <div class="row" style="background-color:lightblue; padding-right:0;">
       <div class="container bottomContainer">
       <div class="col-md-1 mediaButton"></div>
-      <div class="col-md-1 mediaButton">Proudly</br/>Serving:</div>
+      <div class="col-md-1 mediaButton">Proudly Serving:</div>
       <div class="col-md-1 mediaButton"><img class="easyTiger" src="https://c1.staticflickr.com/5/4171/34457044831_60fc10daef_t.jpg" style="width:54px;"/></div>
       <div class="col-md-1 mediaButton"><img class="amys" src="https://mallimages.mallfinder.com/svc/storeimage.cfm?storeid=2137037859&newsize=400x400" style="width:54px;" /></div>
       <div class="col-md-1 mediaButton"><img class="katz" src="http://media.culturemap.com/crop/8b/7f/300x300/Katz-Coffee_101427.jpg" style="width:54px;"/></div>
-      <div class="col-md-2 mediaAddress"><h4>617 CONGRESS AVE AUSTIN, TX 78701 <br> Phone: (512) 443-3688</h4></div>
-      <div class="col-md-1 mediaButton"><img class="socialMedia" src="https://s3.amazonaws.com/store-product-images/icon-twitter-bird-circle-black-40x.png" /></div>
-      <div class="col-md-1 mediaButton"><img class="socialMedia" src="https://s3.amazonaws.com/store-product-images/icon-facebook-circle-black-40x.png" /></div>
-      <div class="col-md-1 mediaButton"><img class="socialMedia" style="background-color:black; border-radius:60%;" src="http://www.championsboston.com/wp-content/uploads/2013/03/icon-instagram.png" /></div>
-      <div class="col-md-1 mediaButton"><img class="socialMedia" style="background-color:black; border-radius:60%" src="http://ffh-station.com/wp-content/uploads/2016/07/tripadvisor-circle-white-40px.png" /></div>
-      <div class="col-md-1 mediaButton">Social <br/>Media</div>
+      <div class="col-md-2 mediaAddress"><h4><center>617 CONGRESS AVE AUSTIN, TX 78701 <br> Phone: (512) 443-3688</center></h4></div>
+      <div class="col-md-1 mediaButton"><img id="twitter" class="socialMedia" src="https://s3.amazonaws.com/store-product-images/icon-twitter-bird-circle-black-40x.png" /></div>
+      <div class="col-md-1 mediaButton"><img id="facebook" class="socialMedia" src="https://s3.amazonaws.com/store-product-images/icon-facebook-circle-black-40x.png" /></div>
+      <div class="col-md-1 mediaButton"><img id="instagram" class="socialMedia" style="background-color:black; border-radius:60%;" src="http://www.championsboston.com/wp-content/uploads/2013/03/icon-instagram.png" /></div>
+      <div class="col-md-1 mediaButton"><img id="tripadvisor" class="socialMedia" style="background-color:black; border-radius:60%" src="http://ffh-station.com/wp-content/uploads/2016/07/tripadvisor-circle-white-40px.png" /></div>
+      <div id="social" class="col-md-1 mediaButton">Social Media</div>
 
     </div>
     </div>
