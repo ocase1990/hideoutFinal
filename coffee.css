@@ -1,13 +1,13 @@
 html {
   height: 100%;
-  overflow: hidden;
+  background-color: #000;
 }
 body {
   margin: 0 auto;
   height: 100%;
   font-family: 'Amatic SC', cursive;
-  background-color: lightblue!important;
-  overflow: hidden;
+  background-color: #000;
+
 
 }
 /*
@@ -17,46 +17,41 @@ div {
 .container {
   padding-left: 0px!important;
   padding-right: 0px!important;
+  background-color: #000;
 }
 .menuBar {
   display: flex;
   justify-content: space-around;
-  background-color: lightblue;
 
 }
+/* styling for the navbar font */
 li {
   font-family: 'Amatic SC',cursive;
   color: black;
   border: none;
   cursor: pointer;
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2em;
   padding-top: 4%;
   padding-bottom: 2%;
 
 }
 
 
-.navbar-toggle {
-
-}
 /* leftmenu and rightmenu refer to each side of the top bar menu */
 .leftmenu {
   float: left!important;
 }
-.rightmenu {
-
-}
-
-
+/**** LOGO STYLING ****/
 .logo {
   visibility: hidden;
   width: 12%;
-  position: absolute;
+  position: fixed;
   border: none;
   cursor: pointer;
   z-index: 2000;
 }
+/*REMOVE LOGO ON SMALLER THAN 1250px */
 @media screen and (min-width: 1250px) {
     .logo {
         visibility: visible!important;
@@ -65,74 +60,58 @@ li {
 
 
 /* main image styles and text styles*/
-.mainImage {
- background-image: url("http://i.imgur.com/WfLA29P.jpg");
- height: 80vh;
- width: 100%;
- background-size: cover;
-
-}
 
 .row {
   margin: 0!important;
   padding: 0!important;
 
 }
-.video_wrapper {
+
+/*CENTER CONTENT PICTURE */
+.main {
+  width: 100%;
   background-image: url("https://static1.squarespace.com/static/542aae07e4b06868dcab2966/t/546eb682e4b0f8f6a10aadef/1416541826584/the+Hideout+Coffee+house?format=1000w");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000000;
+  height: 80%;
 }
 
+/*VIDEO EDITING*/
+.video_wrapper {
+  opacity: 0.4;
+
+}
 .thevideo {
   object-fit: contain;
   display: block;
-
-
   width: 100%;
 }
 
-
-.defaultpic {
-  margin-top: 7%;
-  width: 100%;
-}
 /* Hide Play button + controls on iOS */
 video::-webkit-media-controls {
     display:none !important;
 }
 
-.footer {
-
-}
-.bottomRow {
-  background-color: lightblue;
-  height: 100%;
-}
 .bottomContainer {
-
   margin: 0 auto;
 }
 
 .mediaButton {
-  padding-top: 0.7%;
   font-family: 'Amatic SC', cursive;
-  background-color: lightblue;
   font-size: 190%;
   font-weight: 500;
 }
 .mediaAddress {
-  padding-top: 0.7%;
   font-family: 'Amatic SC', cursive;
-  background-color: lightblue;
   font-size: 190%;
   font-weight: 500;
 }
 #proud {
   display: block;
 }
+/* proudly serving content
 .easyTiger {
   width: 70%;
   border-radius: 60%;
@@ -145,91 +124,73 @@ video::-webkit-media-controls {
   width: 83%;
   border-radius: 60%
 }
+*/
 /**** MOBILE EDITING ***/
 
 .mobileView {
   display: none;
-  margin-top: 50px;
   height: 45%;
 }
 
 #mobilesocial {
-  border: 2px solid white;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  flex: 0 0 100%; /* Let it fill the entire space horizontally */
-}
-#mobiletwitter, #mobilefacebook, #mobileinstagram, #mobiletripadvisor {
-  width: 70px;
-  margin-top: 25px;
-  flex: 0 0 50%;
 
-}
-#mobileaddress {
-  flex: 0 0 100%;
-  margin-top: 15px;
-  background-color: transparent;
   color: white;
   font-size: 30px;
   font-weight: 400;
-  border: 2px solid white;
-  border-radius: 10px;
-  background-color: black;
+  text-align: center;
+}
+#mobiletwitter, #mobilefacebook, #mobileinstagram, #mobiletripadvisor {
+  width: 70px;
   padding: 5px;
+
+}
+#mobileaddress {
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  background-color: black;
+}
+
+@media screen and (max-width: 1365px) {
+  .main {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 570px) {
+
+  #mobiletwitter, #mobilefacebook, #mobileinstagram, #mobiletripadvisor {
+    width: 30px;
+    flex: 0 0 50%;
+  }
+  #mobileaddress {
+    font-size: 15px;
+  }
 }
 
 
-@media screen and (max-height: 767px) {
-  .mobileButton {
-    display: inline-block;
-    background-color: transparent;
-  }
-    .nonMobile {
-      display: none;
-    }
     .mobileView {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
     }
 
-    .thevideo {
-        visibility: hidden!important;
-    }
-    .video_wrapper {
-      margin-top: 50px;
-    }
-    .bottomRow {
-      background-image: url("http://images.all-free-download.com/images/graphiclarge/wood_grain_03_hd_pictures_168527.jpg");
-    }
 
-}
-@media screen and (max-width: 768px) {
-  .mobileButton {
-    display: inline-block;
-    background-color: transparent;
-  }
-    .nonMobile {
-      display: none;
+    .mobileButton {
+      display: inline-block;
+      background-color: transparent;
     }
-    .mobileView {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
+      .mobileView {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
 
-    .thevideo {
-        visibility: hidden!important;
-    }
-    .video_wrapper {
-      margin-top: 50px;
-    }
-    .bottomRow {
-      background-image: url("http://images.all-free-download.com/images/graphiclarge/wood_grain_03_hd_pictures_168527.jpg");
-    }
-
-}
+      .bottomRow {
+        background-image: url("http://images.all-free-download.com/images/graphiclarge/wood_grain_03_hd_pictures_168527.jpg");
+      }

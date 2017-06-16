@@ -2,11 +2,20 @@ body {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/contemporary_china_2.png");
   height: 100%;
   width: 100%;
+
 }
 .menubar > div {
-  font-size: 14px;
+  font-weight: 800;
+  font-size: 2em;
   text-align: center;
+  font-family: 'Amatic SC', cursive;
 
+}
+.navbar-brand >span {
+  font-weight: 800;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
 }
 .linkbar {
   border: 0px!important;
@@ -26,7 +35,10 @@ body {
 .localLinks > li > a {
   text-decoration: none;
   color: #9d9d9d!important;
-  font-size: 12px;
+  font-weight: 800;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
   padding: 15px;
   margin-top: 3px;
 }
