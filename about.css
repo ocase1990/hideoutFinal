@@ -71,11 +71,15 @@ p {
   #picture1, #picture3 {
     width: 400px;
   }
+  #calendariframe {
+    width: 600px;
+  }
 }
 @media screen and (max-width: 827px ) {
   .nav>li>a {
     padding: 15px 10px 15px 10px!important;
   }
+
 }
 @media screen and (max-width: 450px) {
   img {
