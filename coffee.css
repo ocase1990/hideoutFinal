@@ -75,7 +75,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000000;
-  height: 80%;
+  height: 91%;
 }
 
 /*VIDEO EDITING*/
@@ -154,13 +154,24 @@ video::-webkit-media-controls {
 
 @media screen and (max-width: 1365px) {
   .main {
-    height: 60%;
+    height: 86%;
   }
 }
 @media screen and (max-width: 767px) {
   .main {
     height: 40%;
   }
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 570px) {
 

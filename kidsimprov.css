@@ -4,14 +4,15 @@ body {
   width: 100%;
 
 }
-.menubar > div {
-  font-weight: 800;
-  font-size: 2em;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
 
-}
 .navbar-brand >span {
+  text-align: center;
+}
+.navbar-nav {
+  text-align: center!important;
+}
+.navbar-nav > li {
+  margin-left: 5px;
   font-weight: 800;
   font-size: 2em;
   text-align: center;
@@ -35,10 +36,6 @@ body {
 .localLinks > li > a {
   text-decoration: none;
   color: #9d9d9d!important;
-  font-weight: 800;
-  font-size: 1.5em;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
   padding: 15px;
   margin-top: 3px;
 }
@@ -57,11 +54,7 @@ img {
 }
 
 .row {
-  border-top: 0px;
-  border-bottom: 0px;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  border-radius: 15px;
+
   margin: 1%;
 }
 p {
@@ -73,10 +66,27 @@ p {
     width: 400px;
   }
 }
-@media screen and (max-width: 827px ) {
+@media screen and (max-width: 999px) {
+  .navbar-nav > li {
+    font-size: 1.25em;
+
+  }
+}
+@media screen and (max-width: 871px) {
   .nav>li>a {
     padding: 15px 10px 15px 10px!important;
   }
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 450px) {
   img {
