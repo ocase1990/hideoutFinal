@@ -1,0 +1,164 @@
+
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.navbar-brand {
+  font-size: 140%;
+}
+
+img {
+  width: 100%;
+    height:auto;
+}
+
+p{
+  font-size: 15px;
+}
+
+.buttons{
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: none;
+  background-color: rgb(220,220,220);
+  margin-left: 19%;
+
+}
+
+.navbar-nav {
+  font-family: 'Amatic SC', cursive;
+  height: 6vh;
+  font-size: 30px;
+  margin-left: 4%;
+}
+
+.container {
+  width: 100%;
+}
+
+.want {
+  font-size: 15px;
+}
+
+li {
+  margin-left: 11px;
+}
+
+footer {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 1280px){
+  .navbar-nav {
+    height: 6vh;
+    font-size: 196%;
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 1200px){
+  .buttons {
+  margin-top: 25px;
+  margin-left: 1%;
+
+  }
+  .navbar-nav {
+    height: 6vh;
+    font-size: 187%;
+    margin-left: 3%;
+  }
+  li {
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 1024px){
+
+  .navbar-nav {
+    height: 6vh;
+    font-size: 166%;
+    margin-left: 1%
+  }
+}
+
+@media (max-width: 992px){
+  .buttons {
+  margin-top: 20px;
+  margin-left: 38%;
+  }
+  .navbar-nav {
+    height: 6vh;
+    font-size: 195%;
+    margin-left: 1%;
+    width: `100%;
+    text-align: center;
+  }
+  li {
+    margin-left: -16px;
+  }
+  .navbar-brand {
+    font-size: 140%;
+  }
+
+}
+
+@media (max-width: 880px){
+  .buttons {
+  margin-top: 20px;
+  margin-left: 37%;
+  }
+  .navbar-nav {
+    height: 6vh;
+    font-size: 166%;
+    margin-left: -1%;
+    width: 83%;
+    text-align: center;
+  }
+  li {
+    margin-left: -16px;
+  }
+  .navbar-brand {
+    font-size: 119%;
+  }
+
+}
+
+@media (max-width: 767px){
+  .buttons {
+  margin-top: 20px;
+  margin-left: 37%;
+  }
+  .navbar-nav {
+    height: 100%;
+    font-size: 240%;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-brand {
+    font-size: 154%;
+  }
+
+}
+
+@media (max-width: 400px){
+  .buttons {
+  margin-top: 20px;
+  margin-left: 33%;
+  }
+}
+
+@media (max-width: 375px){
+  .buttons {
+  margin-top: 20px;
+  margin-left: 30%;
+  }
+}

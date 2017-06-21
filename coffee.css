@@ -40,12 +40,65 @@ li {
 
 /* leftmenu and rightmenu refer to each side of the top bar menu */
 .leftmenu {
-  float: left!important;
+
+
 }
+.rightmenu {
+
+
+
+}
+
+@media screen and (max-width: 1650px) {
+  .leftmenu {
+    padding-left: 220px!important;
+
+  }
+  .rightmenu {
+
+    padding-right: 220px!important;
+
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .leftmenu {
+    padding-left: 180px!important;
+
+  }
+  .rightmenu {
+
+    padding-right: 180px!important;
+
+  }
+}
+@media screen and (max-width: 1180px) {
+  .leftmenu {
+    padding-left: 100px!important;
+
+  }
+  .rightmenu {
+
+    padding-right: 100px!important;
+
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .leftmenu {
+    padding-left: 0px!important;
+
+  }
+  .rightmenu {
+
+    padding-right: 0px!important;
+
+  }
+}
+
 /**** LOGO STYLING ****/
 .logo {
   visibility: hidden;
-  width: 12%;
   position: fixed;
   border: none;
   cursor: pointer;
