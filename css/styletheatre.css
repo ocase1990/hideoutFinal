@@ -264,7 +264,7 @@ header{
 @media (min-width: 768px){
 
   .navbar-nav {
-    font-size: 35px;
+    font-size: 2em;
     margin-left: 0%;
   }
 .navbar .navbar-nav {
